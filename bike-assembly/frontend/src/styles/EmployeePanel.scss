@@ -1,0 +1,84 @@
+/* Styling for Employee Panel */
+.bike-tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.bike-tile {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+
+  h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  button {
+    background-color: #1e90ff;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #3a99ff;
+    }
+  }
+}
+
+.bike-completion {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #e8f4fd;
+  border: 1px solid #b3d7f1;
+  border-radius: 8px;
+}
+
+.time-dropdown {
+  margin-bottom: 20px;
+
+  label {
+    font-size: 1rem;
+    margin-right: 10px;
+  }
+
+  select {
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    outline: none;
+    cursor: pointer;
+    width: 200px;
+
+    &:focus {
+      border-color: #1e90ff;
+    }
+  }
+}
+
+button {
+  background-color: #ff4d4d;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #e60000;
+  }
+}

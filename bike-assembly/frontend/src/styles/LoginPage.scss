@@ -1,0 +1,41 @@
+.login-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+  
+    h2 {
+      margin-bottom: 20px;
+    }
+  
+    form {
+      box-shadow: 0 4px 6px rgba(65, 50, 50, 0.1);
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      min-width: 300px;
+  
+      input {
+        display: block;
+        width: 95%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+  
+      button {
+        width: 100%;
+        margin-top: 10px;
+      }
+    }
+  
+    .error {
+      color: red;
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+  }
+  
