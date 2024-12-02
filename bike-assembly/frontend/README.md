@@ -40,8 +40,8 @@ This is the frontend codebase for the **Bike Point Application**, a platform tha
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-repo/bike-point-frontend.git
-   cd bike-point-frontend
+   git clone https://github.com/GokulSandeepPM/Metayb/tree/main/bike-assembly
+   cd bike-assembly/frontend
    ```
 
 2. **Install Dependencies**:

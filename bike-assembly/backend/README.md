@@ -60,8 +60,8 @@ Ensure you have the following installed on your machine:
 
 1. **Clone the repository:**
    ```bash
-   git clone <repository_url>
-   cd bike-assembly-backend
+   git clone https://github.com/GokulSandeepPM/Metayb/tree/main/bike-assembly
+   cd bike-assembly/backend
    ```
 
 2. **Install dependencies:**
