@@ -64,7 +64,7 @@ exports.getBikeAssemblyStats = async (req, res) => {
         },
       },
       {
-        $sort: { "_id": 1 }, // Sorting by date
+        $sort: { "_id": 1 }, 
       }
     ]);
     res.json(bikes);
@@ -92,7 +92,7 @@ exports.getEmployeeProduction = async (req, res) => {
       },
       {
         $lookup: {
-          from: 'employees', // Assuming 'employees' is the name of the Employee collection
+          from: 'employees', 
           localField: '_id',
           foreignField: '_id',
           as: 'employee',
@@ -117,14 +117,8 @@ exports.getEmployeeProduction = async (req, res) => {
 
 exports.getUnderAssemblyBike = async (req, res) => {
   try {
-    // Get the employee ID from the authenticated user (assuming it's stored in req.user)
     const employeeId = req.user._id;
-
-    // Find the bike assigned to the employee that is still under assembly
     const bike = await Bike.findOne({ employeeId, underAssembly: true });
-
-    
-    // Return the bike details
     res.status(200).json(bike);
   } catch (err) {
     console.error(err);
